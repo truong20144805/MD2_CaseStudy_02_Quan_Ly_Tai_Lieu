@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-    displayMainMenu();
+        ManageBook manageBook = new ManageBook();
+        manageBook.addBook();
+
     }
     public static void displayMainMenu(){
                 System.out.println("Please enter your choice:\n"+"1.Add new book.\n"+
