@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,5 +16,22 @@ public class FileBook {
         fr.close();
         return list;
     }
+    static void wirteToFile(String path,List<Book>list){
 
+            FileWriter fw;
+            BufferedWriter bw;
+            try {
+                fw = new FileWriter(path);
+                bw = new BufferedWriter(fw);
+            String str = "ID,Name,Author,Producer,Page,Year,Price";
+            for (Book book : list) {
+                str += book.getId() + "," + book.getName() + "," + book.getAuthor() + "," + book.getProducer() + "," + book.getPage() + "," + book.getYear() + "," + book.getPrice() + "\n";
+            }
+             bw.write(str);
+            bw.close();
+            fw.close();
+        }  catch (IOException e) {
+                System.out.println("No file detected!");
+            }
+    }
 }
