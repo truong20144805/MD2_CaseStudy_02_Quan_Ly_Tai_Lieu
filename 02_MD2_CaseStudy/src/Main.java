@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         ManageBook manageBook = new ManageBook();
-        manageBook.addBook();
-
+       manageBook.addBook();
+            manageBook.display();
     }
     public static void displayMainMenu(){
                 System.out.println("Please enter your choice:\n"+"1.Add new book.\n"+

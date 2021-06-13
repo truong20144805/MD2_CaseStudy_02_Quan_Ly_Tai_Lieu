@@ -2,11 +2,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Validate {
-    public static final String YEAR_REGEX = "^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$";
-    public static final String ID_REGEX = "^[IT][0-9]{4}$";
-    public boolean valid(String str, String regex) {
+    public static final String YEAR_REGEX = "^((0?[13578]|10|12)(-|\\/)(([1-9])|(0[1-9])|([12])([0-9]?)|(3[01]?))(-|\\/)((19)([2-9])(\\d{1})|(20)([01])(\\d{1})|([8901])(\\d{1}))|(0?[2469]|11)(-|\\/)(([1-9])|(0[1-9])|([12])([0-9]?)|(3[0]?))(-|\\/)((19)([2-9])(\\d{1})|(20)([01])(\\d{1})|([8901])(\\d{1})))$";
+    public static final String ID_REGEX = "^IT[0-9]{4}$";
+    public boolean valid(String regex, String string) {
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(str);
+        Matcher matcher = pattern.matcher(string);
         return matcher.matches();
     }
 }
