@@ -96,15 +96,10 @@ public class Main {
     }
 
     public static void displayMainMenu() {
-        System.out.println("Main menu :\n" + "1.Add new book.\n" +
-                "2.Display book.\n" +
-                "3.Edit book.\n" +
-                "4.Delete book.\n" +
-                "5.Search book.\n" +
-                "6.Sort.\n" +
-                "7.Write to File.\n" +
-                "8.Read to File.\n" +
-                "0.Exit.");
+        System.out.println("----------------------MAIN MENU-------------------------");
+        System.out.printf("%-22s%-22s%s\n","1.Add new book.","2.Display book.","3.Edit book.");
+        System.out.printf("%-22s%-22s%s\n","4.delete book.","5.Search book.","6.Sort.");
+        System.out.printf("%-22s%-22s%s\n","7.Write to File.","8.Read to File.","0.Exit.");
         System.out.println("Enter your opt: ");
     }
 
