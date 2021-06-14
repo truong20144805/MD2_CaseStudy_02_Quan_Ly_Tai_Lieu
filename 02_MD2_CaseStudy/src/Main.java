@@ -55,7 +55,7 @@ public class Main {
                     }
                     break;
                 case 4:
-                    manageBook.displaySearchList();
+                    manageBook.deleteBookById();
                     break;
                 case 5:
                     searchingMenu();

@@ -23,7 +23,7 @@ public class FileBook {
             try {
                 fw = new FileWriter(path);
                 bw = new BufferedWriter(fw);
-            String str ="Name,ID,Author,Producer,Page,Year,Price\n";
+            String str ="ID,Name,Author,Producer,Page,Year,Price\n";
             for (Book book : list) {
                 str += book.getId() + "," + book.getName() + "," + book.getAuthor() + "," + book.getProducer() + "," + book.getPage() + "," + book.getYear() + "," + book.getPrice() + "\n";
             }

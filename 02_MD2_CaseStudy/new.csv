@@ -1,3 +1,6 @@
-Name,ID,Author,Producer,Page,Year,Price
-IT1234,trong,123,pv,234,12/02/1990,240.0
-Truong Pv,IT1212,Truong,Thai Binh,100,12/07/1995,100000.0
+ID,Name,Author,Producer,Page,Year,Price
+IT1235,Ha Noi 36 pho phuong,Doan Son,Nam Dinh,211,05/09/1999,11000.0
+IT1234,Gio Dau Ngo,Hung Tran,Nam Dinh,234,12/02/1990,24000.0
+IT1236,Dan choi Hai Phong,Tien Nguyen,Hai Phong,330,7/12/1994,56000.0
+IT1237,To Lai Ha Noi,Hieu Trung,Ha Noi,436,5/4/1999,60000.0
+IT1240,Hello Kitty,Truong Pv,Thai Binh,759,08/01/1995,800000.0

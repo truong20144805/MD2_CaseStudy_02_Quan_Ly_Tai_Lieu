@@ -13,8 +13,8 @@ public class Book implements Serializable {
     }
 
     public Book(String id, String name, String author, String producer, int page, String year, float price) {
-        this.name = id;
-        this.id = name;
+        this.id = id;
+        this.name = name;
         this.author = author;
         this.producer = producer;
         this.page = page;

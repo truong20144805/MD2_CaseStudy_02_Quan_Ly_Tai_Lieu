@@ -66,7 +66,7 @@ public class ManageBook {
      public void addBook(){
          Book book = createNewBook();
          list.add(book);
-         writeToFile();
+//         writeToFile();
      }
      public void display(){
          for (Book book : list){
