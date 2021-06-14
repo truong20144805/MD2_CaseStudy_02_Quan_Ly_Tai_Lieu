@@ -32,21 +32,21 @@ public class ManageBook {
          do {
              string = scanner.nextLine();
              check = validate.valid(regex,string);
-             if (!check){
+             if (check==false){
                  System.out.println(" Wrong input, Please input again !");
              }
          } while (!check);
          return string;
      }
      public Book createNewBook(){
-         System.out.print("Enter id: ");
+         System.out.print("Enter Id: ");
          String id;
          boolean check = false;
          do {
              id = validateData(validate.ID_REGEX);
              check = checkID(id);
              if (!check) {
-                 System.out.print("Dupicated ID, re input:");
+                 System.out.print("Duplicated ID, re input:");
              }
          } while (!check);
          System.out.println("Enter new name book: ");
@@ -57,6 +57,7 @@ public class ManageBook {
          String producer = scanner.nextLine();
          System.out.println("Enter page number: ");
          int page = scanner.nextInt();
+         scanner.nextLine();
          System.out.println("Enter Year: ");
          String year = validateData(validate.YEAR_REGEX );
          System.out.println("Enter price: ");
