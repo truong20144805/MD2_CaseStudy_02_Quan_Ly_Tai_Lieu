@@ -175,6 +175,7 @@ public class ManageBook {
         System.out.println("update successful!");
     }
     public void editYear(Book book){
+        scanner.nextLine();
         System.out.println("Enter year: ");
         String year = validateData(validate.YEAR_REGEX);
         book.setYear(year);
